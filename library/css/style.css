@@ -58,10 +58,7 @@ img{
     font-style: normal;
     font-weight: 400;
     line-height: 50px;
-}
-/*About*/
-.section-about{
-
+    cursor: pointer;
 }
 .section-heading{
   text-align: center;
@@ -75,13 +72,15 @@ img{
     line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
+    margin: 0px;
 }
 .section-line{
-    background-color: #0C0C0E;
+    border-bottom: #0C0C0E solid 1px;
     width: 50px;
     height: 1px;
     text-align: center;
     margin: auto;
+
 }
 .section-about-description{
       text-align: center;
@@ -116,16 +115,132 @@ img{
 /*Favorites */
 .section-favorites-sub-titel{
   text-align: left;
-    margin: 0;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
+    color: #000;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+          display: block;
 }
-.section-favorites-radiobutons-list{
+.radiobuton{
+  margin-right: 20px;
+}
+.section-favorites-radiobutons-list-season{
+  margin-right: 90px;
+}
+.section-favorites-radiobutons-list {
   display: flex;
   padding: 0px;
 }
+.section-favorites-radiobutons-list li.selected{
+  font-weight: bold;
+}
+.section-favorites-radiobutons-list li{
+  display: flex;
+  align-items: center;
+
+}
 .section-favorites-cards-list{
   padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-favorites-cards-item{
+  border: 1px solid #000;
+    background: #FFF;
+    width: 550px;
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 40px;
+        margin-right: 40px;
+
+}
+.section-favorites-cards{
+  margin-top: 40px;
+}
+.section-favorites-cards-item-heading{
+  margin: 0;
+  color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.section-favorites-cards-item-line{
+    background-color: #BB945F;
+width: 60px;
+  height: 1px;
+      text-align: center;
+      margin-bottom: 20px;
+}
+.section-favorites-cards-item-title{
+  color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+.upercase{
+      text-transform: uppercase;
+}
+.section-favorites-cards-item-description{
+  color: #000;
+  width: 355px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+}
+.section-favorites-cards-btn{
+  width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+      border: 1px solid #0C0C0E;
+      background-color:#FFF;
+      position: absolute;
+      left: 20px;
+      bottom: 15px;
+      color: #0C0C0E;
+        text-align: center;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+        cursor: pointer;
+}
+.section-favorites-cards-btn:hover{
+  border-radius: 2px;
+    border: 1px solid #BB945F;
+    color: #BB945F;
+      text-align: center;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+}
+.section-favorites-cards-blok-img{
+  position: absolute;
+  right: -40px;
+  bottom: -1px;
 }
 .section-2block{
   display: flex;
@@ -142,11 +257,18 @@ img{
     line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    margin-top: 40px;
+    padding-top: 40px;
     margin-bottom: 40px;
 }
+.section-coffee-shop-blocks{
+  display: flex;
+  justify-content: space-between;
+}
 .section-coffee-shop-blocks-section1{
-  max-width: 438px;
+  max-width: 482px;
+}
+.section-coffee-shop-blocks-section2 {
+  max-width: 482px;
 }
 .section-heading-coffeeshop{
   color: #BB945F;
@@ -194,6 +316,19 @@ img{
     margin-left: 60px;
     margin-right: 60px;
 }
+.section-coffee-shop-blocks-punkt-blok-lp{
+  display: flex;
+  align-items:center;
+}
+.section-coffee-shop-blocks-section2 .section-heading-coffeeshop{
+  text-align: right;
+}
+.section-coffee-shop-blocks-section2 .section-coffee-shop-blocks-punkt{
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .section-cards-blok-form-titel{
   color: #000;
     font-family: Inter;
@@ -283,6 +418,11 @@ img{
     padding: 10px 40px;
     text-align: center;
     background: #FFF;
+    cursor: pointer;
+}
+.form-btm:hover{
+      border: 1px solid #BB945F;
+        color: #BB945F;
 }
 .form-btn-block{
   text-align: center;
@@ -334,6 +474,11 @@ img{
           line-height: normal;
           letter-spacing: 1px;
           margin-left: 20px;
+          background-color:#FFF;
+}
+.section-cards-blok-btn:hover{
+border: 1px solid #BB945F;
+  color: #BB945F;
 }
 .footer-block-top{
   display: flex;
@@ -386,6 +531,9 @@ img{
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 2px;
+}
+a{
+  color: #000;
 }
 .footer-rc{
   color: #FFF;

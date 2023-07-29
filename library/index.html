@@ -7,6 +7,11 @@
   <title>Brooklyn Public Library</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -17,19 +22,19 @@
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Favorites</a>
+            <a href="#favorites" class="nav-link">Favorites</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Coffee shop</a>
+            <a href="#cofeshop" class="nav-link">Coffee shop</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Contacts</a>
+            <a href="#contacts" class="nav-link">Contacts</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Library Card</a>
+            <a href="#library" class="nav-link">Library Card</a>
           </li>
         </ul>
       </nav>
@@ -41,26 +46,26 @@
     </div>
   </header>
   <main>
-    <section class="section-welcome">
+    <section>
       <img src="img/Welcome.png" alt="welcome" class="welcome">
     </section>
 
     <section class="section-about">
       <div class="container">
-        <h2 class="section-heading">About</h2>
+        <h2 id="about" class="section-heading">About</h2>
         <div class="section-line"></div>
         <p class="section-about-description">
           The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside
         </p>
         <ul class="section-about-list">
           <li class="section-about-item">
-            <img class="section-about-img" src="img/image 1.png" alt="img1">
+            <img class="section-about-img" src="img/image1.png" alt="img1">
           </li>
           <li class="section-about-item">
-            <img class="section-about-img" src="img/image 2.png" alt="img2">
+            <img class="section-about-img" src="img/image2.png" alt="img2">
           </li>
           <li class="section-about-item">
-            <img class="section-about-img" src="img/image 3.png" alt="img3">
+            <img class="section-about-img" src="img/image3.png" alt="img3">
           </li>
         </ul>
         <div class="section-about-carusel">
@@ -75,32 +80,32 @@
 
     <section class="section-favorites">
       <div class="container">
-        <h2 class="section-heading">Favorites</h2>
+        <h2 id="favorites" class="section-heading">Favorites</h2>
         <div class="section-line"></div>
         <strong class="section-favorites-sub-titel">Pick favorites of season</strong>
         <div class="section-favorites-radiobutons">
           <ul class="section-favorites-radiobutons-list">
-            <li class="section-favorites-radiobutons-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+            <li class="section-favorites-radiobutons-item selected">
+              <svg class="radiobuton" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <circle cx="8.5" cy="8.5" r="7.5" stroke="black" stroke-width="2" />
                 <circle cx="8.5" cy="8.5" r="3.5" fill="black" />
               </svg>
               <span class="section-favorites-radiobutons-list-season">Winter</span>
             </li>
             <li class="section-favorites-radiobutons-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+              <svg class="radiobuton" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <circle cx="8.5" cy="8.5" r="7.5" stroke="black" stroke-width="2" />
               </svg>
               <span class="section-favorites-radiobutons-list-season">Spring</span>
             </li>
             <li class="section-favorites-radiobutons-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+              <svg class="radiobuton" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <circle cx="8.5" cy="8.5" r="7.5" stroke="black" stroke-width="2" />
               </svg>
               <span class="section-favorites-radiobutons-list-season">Summer</span>
             </li>
             <li class="section-favorites-radiobutons-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+              <svg class="radiobuton" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <circle cx="8.5" cy="8.5" r="7.5" stroke="black" stroke-width="2" />
               </svg>
               <span class="section-favorites-radiobutons-list-season">Autumn</span>
@@ -108,10 +113,10 @@
           </ul>
         </div>
         <div class="section-favorites-cards">
-          <div class="section-favorites-conteiner">
+          <div class="">
             <ul class="section-favorites-cards-list">
               <li class="section-favorites-cards-item">
-                <div class="">
+                <div class="section-favorites-cards-blok">
                   <h3 class="section-favorites-cards-item-heading">Staff Picks</h3>
                   <div class="section-favorites-cards-item-line"></div>
                   <strong class="section-favorites-cards-item-title">
@@ -122,14 +127,15 @@
                     tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex
                     protagonist. Not for the faint of heart.
                   </p>
-                  <div class="buton">
+                  <button class="section-favorites-cards-btn">
                     Buy
-                  </div>
+                  </button>
+                  
                 </div>
-                <img src="img/book1.png" alt="book">
+                <img class="section-favorites-cards-blok-img" src="img/book1.png" alt="book">
               </li>
               <li class="section-favorites-cards-item">
-                <div class="">
+                <div class="section-favorites-cards-blok">
                   <h3 class="section-favorites-cards-item-heading">Staff Picks</h3>
                   <div class="section-favorites-cards-item-line"></div>
                   <strong class="section-favorites-cards-item-title">
@@ -140,14 +146,14 @@
                     Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a
                     woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.
                   </p>
-                  <div class="buton">
+                  <button class="section-favorites-cards-btn">
                     Buy
-                  </div>
+                  </button>
                 </div>
-                <img src="img/book3.png" alt="book">
+                <img class="section-favorites-cards-blok-img" src="img/book3.png" alt="book">
               </li>
               <li class="section-favorites-cards-item">
-                <div class="">
+                <div class="section-favorites-cards-blok">
                   <h3 class="section-favorites-cards-item-heading">Staff Picks</h3>
                   <div class="section-favorites-cards-item-line"></div>
                   <strong class="section-favorites-cards-item-title">
@@ -159,14 +165,14 @@
                     for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an
                     inspired introduction to Dante's main themes.
                   </p>
-                  <div class="buton">
+                  <button class="section-favorites-cards-btn">
                     Buy
-                  </div>
+                  </button>
                 </div>
-                <img src="img/book2.png" alt="book">
+                <img class="section-favorites-cards-blok-img" src="img/book2.png" alt="book">
               </li>
               <li class="section-favorites-cards-item">
-                <div class="">
+                <div class="section-favorites-cards-blok">
                   <h3 class="section-favorites-cards-item-heading">Staff Picks</h3>
                   <div class="section-favorites-cards-item-line"></div>
                   <strong class="section-favorites-cards-item-title">
@@ -177,11 +183,11 @@
                     A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and
                     thrived as the modern world has changed around them.
                   </p>
-                  <div class="buton-hower">
+                  <button class="section-favorites-cards-btn">
                     Buy
-                  </div>
+                  </button>
                 </div>
-                <img src="img/book4.png" alt="book">
+                <img class="section-favorites-cards-blok-img" src="img/book4.png" alt="book">
               </li>
             </ul>
           </div>
@@ -191,38 +197,111 @@
 
     <section class="section-coffee-shop">
       <div class="container">
-        <h2 class="section-heading">
+        <h2 id="cofeshop" class="section-heading">
           Coffee shop
         </h2>
         <div class="section-line"></div>
         <div class="section-coffee-shop-description">
-          In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation.<br>
-          you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts<br>
+          In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation.
+          you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts
           from bakery.
         </div>
         <div class="section-coffee-shop-blocks">
           <div class="section-coffee-shop-blocks-section1">
             <div class="section-heading-coffeeshop">
-              Coffee & Tea
+              Coffee &amp; Tea
             </div>
             <ul class="section-coffee-shop-blocks-items">
               <li class="section-coffee-shop-blocks-punkt">
-                <span class="section-coffee-shop-blocks-punkt-name">Cold Brew Coffee</span><div class="section-coffee-shop-blocks-punkt-line"></div><div class="section-coffee-shop-blocks-punkt-price">3$</div>
+                <span class="section-coffee-shop-blocks-punkt-name">Cold Brew Coffee</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">3$</div>
+                </div>
               </li>
               <li class="section-coffee-shop-blocks-punkt">
-                <span class="section-coffee-shop-blocks-punkt-name">French Press Pot</span><div class="section-coffee-shop-blocks-punkt-line"></div><div class="section-coffee-shop-blocks-punkt-price"><div class="section-coffee-shop-blocks-punkt-price"><div class="section-coffee-shop-blocks-punkt-price">5$</div>
+                <span class="section-coffee-shop-blocks-punkt-name">French Press Pot</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">5$</div>
+                </div>
               </li>
               <li class="section-coffee-shop-blocks-punkt">
-                <span class="section-coffee-shop-blocks-punkt-name">Espresso</span><div class="section-coffee-shop-blocks-punkt-line"></div><div class="section-coffee-shop-blocks-punkt-price">2$</div>
+                <span class="section-coffee-shop-blocks-punkt-name">Espresso</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">2$</div>
+                </div>
               </li>
               <li class="section-coffee-shop-blocks-punkt">
-                <span class="section-coffee-shop-blocks-punkt-name">Cappuccino</span><div class="section-coffee-shop-blocks-punkt-line"></div><div class="section-coffee-shop-blocks-punkt-price">4$</div>
+                <span class="section-coffee-shop-blocks-punkt-name">Cappuccino</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">4$</div>
+                </div>
               </li>
               <li class="section-coffee-shop-blocks-punkt">
-                <span class="section-coffee-shop-blocks-punkt-name">Hot tea</span><div class="section-coffee-shop-blocks-punkt-line"></div><div class="section-coffee-shop-blocks-punkt-price">2$</div>
+                <span class="section-coffee-shop-blocks-punkt-name">Hot tea</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">2$</div>
+                </div>
               </li>
               <li class="section-coffee-shop-blocks-punkt">
-                <span class="section-coffee-shop-blocks-punkt-name">Cold tea</span><div class="section-coffee-shop-blocks-punkt-line"></div><div class="section-coffee-shop-blocks-punkt-price">2$</div>
+                <span class="section-coffee-shop-blocks-punkt-name">Cold tea</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">2$</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="section-coffee-shop-blocks-section2">
+            <div class="section-heading-coffeeshop">
+              Desserts &amp; Cakes
+            </div>
+            <ul class="section-coffee-shop-blocks-items">
+              <li class="section-coffee-shop-blocks-punkt">
+                <span class="section-coffee-shop-blocks-punkt-name">Forest Gateau</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">16$</div>
+                </div>
+              </li>
+              <li class="section-coffee-shop-blocks-punkt">
+                <span class="section-coffee-shop-blocks-punkt-name">Blue Moon</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">16$</div>
+                </div>
+              </li>
+              <li class="section-coffee-shop-blocks-punkt">
+                <span class="section-coffee-shop-blocks-punkt-name">Truffle Cake</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">15$</div>
+                </div>
+              </li>
+              <li class="section-coffee-shop-blocks-punkt">
+                <span class="section-coffee-shop-blocks-punkt-name">Chocolate Cake</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">18$</div>
+                </div>
+              </li>
+              <li class="section-coffee-shop-blocks-punkt">
+                <span class="section-coffee-shop-blocks-punkt-name">Poet&apos;s Dream Cake</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">16$</div>
+                </div>
+              </li>
+              <li class="section-coffee-shop-blocks-punkt">
+                <span class="section-coffee-shop-blocks-punkt-name">Pineapple Cake</span>
+                <div class="section-coffee-shop-blocks-punkt-blok-lp">
+                  <div class="section-coffee-shop-blocks-punkt-line"></div>
+                  <div class="section-coffee-shop-blocks-punkt-price">14$</div>
+                </div>
               </li>
             </ul>
           </div>
@@ -232,18 +311,18 @@
 
     <section class="section-contacts">
       <div class="container">
-        <h2 class="section-heading">Our Contacts</h2>
+        <h2 id="contacts" class="section-heading">Our Contacts</h2>
         <div class="section-line"></div>
         <div class="section-contacts-block">
           <div class="section-contacts-descriptio">
             <div class="section-contacts-descriptio-title1">
               For all Library inquiries:
             </div>
-            <div class="section-contacts-descriptio-item">
-              Please call (617) 730-2370
+            <div class="section-contacts-descriptio-item"><a href="tel:6177302370">
+              Please call (617) 730-2370</a>
             </div>
-            <div class="section-contacts-descriptio-item">
-              For TTY service, please call (617) 730-2370
+            <div class="section-contacts-descriptio-item"><a href="tel:6177302370">
+              For TTY service, please call (617) 730-2370</a>
             </div>
             <div class="section-contacts-descriptio-item">
               Putterham Library: (617) 730-2385
@@ -252,7 +331,7 @@
               Senior Staff
             </div>
             <div class="section-contacts-descriptio-item">
-              Library Director: <strong> Amanda Hirst</strong>
+              Library Director: <strong><a href="mailto:amandaHirst@gmail.com">Amanda Hirst</a></strong>
             </div>
           </div>
           <div class="section-contacts-map">
@@ -263,7 +342,7 @@
     </section>
     <section class="section-cards">
       <div class="container">
-        <h2 class="section-heading">
+        <h2 id="library" class="section-heading">
           Digital Library Cards
         </h2>
         <div class="section-line"></div>
@@ -272,7 +351,7 @@
           <div class="section-cards-blok-form-titel">
             Find your Library card</div>
           <div class="section-cards-blok-form">
-            <form action="" class="form">
+            <form action="#" class="form">
               <div class="form-block-input">
                 <p class="form-title">Brooklyn Public Library</p>
                 <p><input name="login" placeholder="Reader's name " class="form-control"></p>
@@ -291,7 +370,7 @@
             You will be able to see a reader card after<br> logging into account or you can register a new<br> account
           </div>
           <div class="section-cards-blok-description-btns">
-            <a class="section-cards-blok-btn" href="#">Sign Up</a> <a class="section-cards-blok-btn" href="#">Log in</a>
+            <button class="section-cards-blok-btn">Sign Up</button> <button class="section-cards-blok-btn">Log in</button>
           </div>
         </div>
         </div>
