@@ -1,0 +1,546 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  width: 1440px;
+  margin: 0 auto;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+.container{
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header{
+  background-color:black;
+  height: 90px;
+}
+.header-container{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.logo{
+  margin-right: auto;
+}
+.logo-text{
+  color: #FFF;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+}
+.nav-list{
+  display: flex;
+}
+.nav-item:not(:last-child){
+  margin-right: 30px;
+}
+.icon-profil{
+  margin-left: 40px;
+}
+.nav-link{
+  color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    cursor: pointer;
+}
+.section-heading{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.section-line{
+    border-bottom: #0C0C0E solid 1px;
+    width: 50px;
+    height: 1px;
+    text-align: center;
+    margin: auto;
+
+}
+.section-about-description{
+      text-align: center;
+      margin: 0;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+}
+.section-about-list{
+  display: flex;
+  flex: 1 1 25px;
+  margin: 0;
+  padding: 0;
+}
+.section-about-carusel{
+  text-align: center;
+  padding: 5px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.section-about-item:not(:last-child){
+  /*justify-content: space-between;*/
+  margin-right: 20px;
+  padding: 0;
+}
+/*Favorites */
+.section-favorites-sub-titel{
+  text-align: left;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #000;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+          display: block;
+}
+.radiobuton{
+  margin-right: 20px;
+}
+.section-favorites-radiobutons-list-season{
+  margin-right: 90px;
+}
+.section-favorites-radiobutons-list {
+  display: flex;
+  padding: 0px;
+}
+.section-favorites-radiobutons-list li.selected{
+  font-weight: bold;
+}
+.section-favorites-radiobutons-list li{
+  display: flex;
+  align-items: center;
+
+}
+.section-favorites-cards-list{
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-favorites-cards-item{
+  border: 1px solid #000;
+    background: #FFF;
+    width: 550px;
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 40px;
+        margin-right: 40px;
+
+}
+.section-favorites-cards{
+  margin-top: 40px;
+}
+.section-favorites-cards-item-heading{
+  margin: 0;
+  color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.section-favorites-cards-item-line{
+    background-color: #BB945F;
+width: 60px;
+  height: 1px;
+      text-align: center;
+      margin-bottom: 20px;
+}
+.section-favorites-cards-item-title{
+  color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+.upercase{
+      text-transform: uppercase;
+}
+.section-favorites-cards-item-description{
+  color: #000;
+  width: 355px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+}
+.section-favorites-cards-btn{
+  width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+      border: 1px solid #0C0C0E;
+      background-color:#FFF;
+      position: absolute;
+      left: 20px;
+      bottom: 15px;
+      color: #0C0C0E;
+        text-align: center;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+        cursor: pointer;
+}
+.section-favorites-cards-btn:hover{
+  border-radius: 2px;
+    border: 1px solid #BB945F;
+    color: #BB945F;
+      text-align: center;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+}
+.section-favorites-cards-blok-img{
+  position: absolute;
+  right: -40px;
+  bottom: -1px;
+}
+.section-2block{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+.section-coffee-shop-description{
+  color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.section-coffee-shop-blocks{
+  display: flex;
+  justify-content: space-between;
+}
+.section-coffee-shop-blocks-section1{
+  max-width: 482px;
+}
+.section-coffee-shop-blocks-section2 {
+  max-width: 482px;
+}
+.section-heading-coffeeshop{
+  color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.section-coffee-shop-blocks-items{
+  padding: 0px;
+}
+.section-coffee-shop-blocks-punkt{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-top: 40px;
+}
+.section-coffee-shop-blocks-punkt-price{
+  color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.section-coffee-shop-blocks-punkt-name{
+  color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.section-coffee-shop-blocks-punkt-line{
+    background-color: #BB945F;
+    width: 100px;
+    height: 1px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.section-coffee-shop-blocks-punkt-blok-lp{
+  display: flex;
+  align-items:center;
+}
+.section-coffee-shop-blocks-section2 .section-heading-coffeeshop{
+  text-align: right;
+}
+.section-coffee-shop-blocks-section2 .section-coffee-shop-blocks-punkt{
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-cards-blok-form-titel{
+  color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.section-contacts-block{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+.section-contacts-descriptio-title1{
+  color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.section-contacts-descriptio-title2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.section-contacts-descriptio-item{
+  color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.form{
+  border: 3px solid #BB945F;
+    background: #FFF;
+    width: 600px;
+}
+.form-block-input{
+  background: #BB945F;
+  margin: 20px;
+  padding: 20px;
+}
+.form-control{
+    border-radius: 10px;
+    background: #FFF;
+    width: 100%;
+    height: 66px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+.form-control p:last-child {
+  margin-bottom: -5px;
+}
+.form-title{
+  color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+}
+.form-btm{
+  border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    padding: 10px 40px;
+    text-align: center;
+    background: #FFF;
+    cursor: pointer;
+}
+.form-btm:hover{
+      border: 1px solid #BB945F;
+        color: #BB945F;
+}
+.form-btn-block{
+  text-align: center;
+}
+.section-cards-blok-description{
+  text-align: right;
+}
+.section-cards-blok-description-title{
+  color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.section-cards-blok-description-text{
+  color: #000;
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    margin-bottom: 35px;
+}
+.section-cards-blok-description-btns{
+  display: flex;
+  justify-content: flex-end;
+}
+.section-cards-blok-btn{
+    display: flex;
+      width: 75px;
+      height: 30px;
+      padding: 10px 0px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+        border: 1px solid #0C0C0E;
+        color: #0C0C0E;
+          text-align: center;
+          font-family: Inter;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1px;
+          margin-left: 20px;
+          background-color:#FFF;
+}
+.section-cards-blok-btn:hover{
+border: 1px solid #BB945F;
+  color: #BB945F;
+}
+.footer-block-top{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-social-list{
+  padding: 0px;
+  display: flex;
+}
+.footer-adres{
+  color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.footer-work-time{
+  color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.section-footer-line{
+  background-color: #FFF;
+    width: 100%;
+    height: 1px;
+}
+.footer-social-link{
+  margin-right: 15px;
+}
+.footer{
+  background-color: #0C0C0E;
+}
+.footer-block-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+      padding-top: 44px;
+        padding-bottom: 44px;
+}
+.footer-year-name{
+  color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+a{
+  color: #000;
+}
+.footer-rc{
+  color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
